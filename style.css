@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --cmn_font: "Ubuntu", sans-serif;
+}
+/* header */
+
+header{
+    background-color: #0f2f44;
+} 
+
+header .row{
+    justify-content: space-between;
+
+}
+header span{
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--cmn_font);
+    padding: 19px 0;
+    line-height: 0;
+
+}
+/* header end */
+
+/* nav */
+nav{
+    background-color: #ffffff;
+
+}
+nav .row{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 42px 19px;
+   
+
+}
+nav ul li a{
+    color: #222222;
+    font-size: 16px;
+    font-family: var(--cmn_font);
+   
+    
+  
+   
+   
+   
+        
+  
+  
+    
+}
+nav ul li a:hover{
+    
+    
+    color: #ffc712;
+  
+    
+    
+}
+nav ul .hover-effect:hover{
+    background-color:#fff9e6 ;
+}
+nav .menu_parent{
+    background-color:#fff9e6;
+  
+    position: absolute;
+    width: 200px;
+    
+    
+    opacity: 0;
+    top: 150px;
+ 
+
+    
+    
+    
+}
+nav .menu_parent li{
+    display:block;
+    width: 100%;
+}
+nav .menu_parent li a{
+    width: 100%;
+    text-align: center;
+    color:black;
+    
+    
+   
+    
+    
+}
+nav .link:hover .menu_parent{
+    opacity: 1;
+    top: 110px;
+    transition: 0.6s;
+   
+}
+nav ul li.search{
+    padding-right: 0;
+  
+}
+nav ul li.search span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #999999;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+
+}
+nav ul li:nth-child(7) span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #999999;
+    text-align: center;
+    line-height: 30px;
+    color: #999999;
+
+}
+
+
+
+
+
+
+
+/* nav end */
+
+
+#banner{
+    background-image: url(./images/banner1.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#banner .contains{
+    width: 470px;
+    height: 600px;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#banner .contains h4{
+    font-family: var(--cmn_font);
+    font-size: 50px;
+    font-weight: 400;
+    color: #0f2f44;
+    padding-bottom: 13px;
+}
+#banner .contains h1{
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #0f2f44;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+
+    
+    
+}
+
+#banner .contains h5{
+    font-family:var(--cmn_font);
+    font-size: 32px;
+    font-weight: 400;
+    color: #8484bf;
+    letter-spacing:19px ;
+    padding-bottom: 30px;
+
+    
+    
+}
+#banner .contains p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 20px;
+    padding-bottom: 30px;
+   
+   
+
+    
+    
+}
+#banner .btn{
+    display: flex;
+    align-items: center;
+}
+
+#banner .btn a{
+    padding: 16px 20px;
+    display: inline-block;
+    background-color:#ffffff ;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--cmn_font);
+    color:#8484bf ;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+#banner .btn a:hover{
+    background-color:#8484bf ;
+    color: #ffffff;
+    transition: 0.5s;
+}
+#banner .btn .play-btn{
+    padding: 16px 20px;
+    display: inline-block;
+    background-color:#ffffff ;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--cmn_font);
+    color:#8484bf ;
+    border-radius: 50%;
+   
+
+}
+#banner .btn .play-btn:hover{
+    background-color:#8484bf ;
+    color: #ffffff;
+    transition: 0.5s;
+
+}
+
+/* banner */
+/* banner end*/
+
+/* about */
+
+#about{
+    background-color: #ffffff;
+}
+#about .contains{
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+#about .contains h6{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--cmn_font);
+    color: #0f2f44;
+    padding-bottom: 10px;
+}
+#about .contains h2{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Abril Fatface", serif;
+    color: #0f2f44;
+    padding-bottom: 30px;
+}
+#about .contains p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #0f2f44;
+    padding-bottom: 33px;
+}
+#about .contains span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #0f2f44;
+    line-height: 32px;
+    padding-bottom: 33px;
+    padding-left: 30px;
+}
+#about .btn1 a{
+    padding: 16px 20px;
+    display:inline-block;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--cmn_font);
+    color: #0f2f44;
+    border-radius: 5px;
+    margin-right: 20px;
+  
+}
+#about .btn1 a:hover{
+    background-color: #ffc712;
+    color: #0f2f44;
+    transition: 0.5s;
+}
+#about .container img{
+    width: 50%;
+    padding-top: 100px;
+}
+/* about end */
